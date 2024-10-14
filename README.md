@@ -62,7 +62,14 @@ Confusion Matrix
 ROC-AUC
 
 ### Best Model:
-The DenseNet121 model, trained from scratch, achieved the highest accuracy on the test set at 98.46%. However, when tested on an external dataset, the accuracy dropped to 56%, highlighting potential challenges with model generalization.
+The DenseNet121 model, trained from scratch, achieved the highest accuracy on the test set at 98.46%. 
+
+![image](https://github.com/user-attachments/assets/71797343-aa4d-480b-9c8c-a149bd5931d3)
+
+
+
+
+However, when tested on an external dataset, the accuracy dropped to 56%, highlighting potential challenges with model generalization.
 Models performed well in test datase but had difficulty generalizing to external datasets.
 
 ### Conclusion
