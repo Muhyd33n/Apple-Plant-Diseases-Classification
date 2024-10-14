@@ -1,4 +1,7 @@
 # Plant Disease Classification using CNN and Transfer Learning
+
+![image](https://github.com/user-attachments/assets/f34c78d1-d0b3-4920-b77c-fc5e30f22758)
+
 This project leverages Convolutional Neural Networks (CNNs) and Transfer Learning to classify diseases in apple plants. Using multiple deep learning models, including ResNet50, VGG16, InceptionV3, DenseNet121, Xception and MobileNet, the model is trained to identify diseases like black rot, mosaic virus, and apple scab from images. The project also includes a comparison of models trained from scratch versus transfer learning.
 
 ## Table of Contents
