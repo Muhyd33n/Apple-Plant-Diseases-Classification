@@ -23,47 +23,57 @@ The project uses the NZDLPlantDisease-v1 dataset, consisting of 15,706 images of
 
 ## Dataset
 The dataset contains both healthy and diseased apple plant images, collected under different lighting conditions and angles to simulate real-world horticultural environments.
-### Name: 
-NZDLPlantDisease-v1
-### Size: 
+The image dataset was extracted from this GitHub repository - https://github.com/hsaleem1/NZDLPlantDisease-v1 and was originally used in the work of (Saleem et. al, 2022). The original dataset consists of 5 crops which include Apple, avocado, Grapevine, Kiwi and Pear.
+
+### Size of Dataset used in this Project: 
 15,706 augmented images of apple plant leaves, stems, and fruits.
 ### Classes: 
-7 (e.g., Black Rot, Leaf Scab, Healthy)
+7 classes that incudes black rot, Black spot (scab), Glomerella leaf spot,  mosaic virus, European canker, Healthy Leaf and Healthy Fruit
+
 ### External Test Dataset: 
 726 images from the same 7 classes.
 
-## Model Architecture
-The project compares multiple CNN architectures:
-ResNet50
-VGG16
-InceptionV3
-Xception
-DenseNet121
-MobileNet
 
-### Two training strategies are employed:
-### Training from scratch:
-Models are trained from randomly initialized weights.
-### Transfer Learning: 
-Models use pre-trained weights from ImageNet, then fine-tuned for plant disease classification.
-Each model is evaluated based on performance metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
-
-## Training and Evaluation
-The models are trained using Google Colab with GPU support for faster computations. During training:
+### Data Partitioning  
+The dataset was split into 3 Subsets, namely. 
+- Training
+- Validation
+- Test
+The split of the dataset is in the ratio of 80:20:10. 80% of the dataset for training, 20% for Validation and 10% for testing the models.
 
 ### Data Augmentation: 
 The dataset is augmented with rotations, brightness adjustments, and flips to increase variability and prevent overfitting.
-### Callbacks: 
-Early stopping and learning rate reduction techniques are used to optimize training.
-### Normalization: 
+
+## Model Architecture
+The project compares multiple CNN architectures:
+- ResNet50
+- VGG16
+- InceptionV3
+- Xception
+- DenseNet121
+- MobileNet
+
+### Two training strategies are employed:
+-  Training from scratch
+-  Transfer Learning: Training CNN architectures using transfer learning involves leveraging the weights of a pre-trained model.
+
+Each model is evaluated based on performance metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
+
+## Training and Evaluation
+The models are trained using Google Colab with GPU support for faster computations. 
+
+### Normalization
 All images are normalized to a range of [0,1] to ensure stable training.
+
+### Optimization Algorithm 
+Early stopping and learning rate reduction techniques are used to optimize training.
 
 ### Evaluation Metrics:
 Accuracy
 Precision
 Recall
 F1-score
-Confusion Matrix
+Confusion Matrix - True Positves, False Positives, True Negatives and False Negatives
 ROC-AUC
 
 ### Best Model:
