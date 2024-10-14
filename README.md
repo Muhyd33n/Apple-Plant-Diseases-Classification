@@ -39,6 +39,8 @@ The dataset was split into 3 Subsets, namely.
 - Training
 - Validation
 - Test
+
+
 The split of the dataset is in the ratio of 80:20:10. 80% of the dataset for training, 20% for Validation and 10% for testing the models.
 
 ### Data Augmentation: 
