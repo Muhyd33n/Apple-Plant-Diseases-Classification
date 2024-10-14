@@ -78,6 +78,11 @@ F1-score
 Confusion Matrix - True Positves, False Positives, True Negatives and False Negatives
 ROC-AUC
 
+### Result for all Models:
+
+![image](https://github.com/user-attachments/assets/604b41cb-a0b8-411f-8b1c-79b1e55dcd0d)
+
+
 ### Best Model:
 The DenseNet121 model, trained from scratch, achieved the highest accuracy on the test set at 98.46%. 
 
