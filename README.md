@@ -66,14 +66,14 @@ The DenseNet121 model, trained from scratch, achieved the highest accuracy on th
 
 ![image](https://github.com/user-attachments/assets/71797343-aa4d-480b-9c8c-a149bd5931d3)
 
-
-
-
 However, when tested on an external dataset, the accuracy dropped to 56%, highlighting potential challenges with model generalization.
 Models performed well in test datase but had difficulty generalizing to external datasets.
 
+![image](https://github.com/user-attachments/assets/2811e82d-7ac5-457f-a46a-4bb5f7dd5bec)
+
+
 ### Conclusion
-This project demonstrates the power of deep learning for automating the detection of plant diseases in apple plants. The best-performing model, DenseNet121, shows high accuracy in controlled environments, but further work is required to improve generalization to external datasets.
+This project demonstrates the power of deep learning for prediction of plant diseases in apple plants. The best-performing model, DenseNet121, shows high accuracy in on both training and test datasets, it also was able to predict external datasets but there is need for more iteration and use of different optimization algorithms for better results.
 
 ### Future Work
 Future work might include comparing transfer learning (feature extraction) and fine tuning on classification problems using the NZDLPlantDisease-v1. Another study can use different optimization algorithms aside from Adam or compare various optimization algorithms to train models with the dataset. 
